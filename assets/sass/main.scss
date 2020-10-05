@@ -11,7 +11,7 @@
 *:focus,
 *:active{
     outline: none;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
@@ -31,19 +31,84 @@ h1,h2,h3,h4,h5,h6{
 #hero-area{
   width: 100%;
   height: 100vh;
-  //border: 1px solid black;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/hero-bg.jpg) no-repeat center center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  background-color: var(--main-color);
+
+ 
   .main-nav{
-    //border: 1px solid black;
+    // border: 1px solid var(--white-color);
+    padding: 1rem 0;
+    margin: 1rem 0 0 0;
+    .container{
+      // border: 1px solid red;
+      display: flex;
+    }
+    .nav-logo{
+      margin: auto auto auto 0;
+      // border: 1px solid #000;
+      img{
+        width: 3.5rem;
+      }
+    }
+    .nav-toggle-btn{
+      margin: auto 0 auto auto;
+      font-size: 3rem;
+      padding:.5rem 1rem;
+      border: none;
+      color: var(--white-color);
+      border: .25rem solid var(--white-color);
+      background-color: transparent;
+      border-radius: .25rem;
+    }
+    .nav-links{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid black;
+      background-color: var(--black-color);
+      z-index: 1000;
+      display: none;
+      ul{
+        margin: auto;
+        padding: 0;
+        list-style-type: none;
+        li{
+          // border: 1px solid white;
+          text-align: center;
+          margin:0 0 1.5rem 0;
+          a{
+            font-size: 3rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: var(--white-color);
+            letter-spacing: .5rem;
+            transition: all 150ms ease-in-out;
+            // border: 1px solid white;
+            &:hover{
+              color: var(--main-color);
+            }
+          }
+        }
+      }
+      
+
+    }
+
     
   }
   .hero-wrapper{
     //border: 1px solid black;
+
     margin: auto 0;
     .hero-heading{
-      //border: 1px solid black;
+      // border: 1px solid black;
+    
       h1{
         text-align: center;
         font-size: 6rem;
@@ -51,13 +116,36 @@ h1,h2,h3,h4,h5,h6{
         color: var(--white-color);
         text-transform: uppercase;
         letter-spacing: .1rem;
+        position: relative;
+        padding: .5rem;
+        // border: 1px solid black;
+        &::after,
+        &::before{
+          content: "";
+          width: 100%;
+          height: .3rem;
+          background-color: var(--white-color);
+          position: absolute;
+          left: 0;
+          right: 0;
+        }
+        &::after{
+          top:0;
+          margin: 0 0 0 0;
+        }
+        
+        &::before{
+          bottom:0;
+        
+        }
+       
       }
       p{
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 400;
         text-align: center;
         color: var(--white-color);
-
+        letter-spacing: .1;
       }
 
     }
