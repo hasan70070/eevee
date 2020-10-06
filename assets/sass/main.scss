@@ -349,6 +349,80 @@ WORKING PROCESS ENDS
 ============================
 */
 
+
+
+/*
+============================
+EXPERENCE AND EDUCATION STARTS
+============================
+*/
+#experience-education{
+  padding: 7rem 0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/experience-education-bg.jpg) no-repeat center center;
+  background-size: cover;
+  // experience-education-bg.jpg
+
+  .experiences,
+  .educations{
+    //border: 1px solid red;
+    .col-content-wrapper{
+     background-color: rgba(55, 55, 55, 0.52);
+     padding: 4rem 15px;
+     //border:1px solid red;
+  
+    }
+    .col-heading{
+      // border: 1px solid blue;
+      margin-bottom:2rem;
+
+      h3{
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+        color: var(--white-color);
+      }
+    }
+    .company{
+      //border: 1px solid red;
+      margin-bottom: 3rem;
+      .wrapper{
+        padding:1rem 0 2rem 0;
+        border-bottom: .2rem solid var(--white-color);
+
+      }
+      h4{
+        font-size:1.8rem ;
+        font-weight: 600;
+        text-transform: capitalize;
+        letter-spacing: .05rem;
+        color: var(--white-color);
+        margin:0 0 1rem 0;
+      }
+      span{
+        font-size:1.4rem ;
+        font-weight: 400;
+        letter-spacing: .05rem;
+        color: #ebebf2;
+
+      }
+      p{
+        font-size:1.6rem ;
+        font-weight: 400;
+        letter-spacing: .05rem;
+        color: #bcbcc5;
+        margin:1.5rem 0 0 0; 
+      }
+    }
+
+  }
+}
+/*
+============================
+EXPERENCE AND EDUCATION ENDS
+============================
+*/
+
 //it will start working at 992px-1199px
 @media screen and(max-width:1199px){
     html{
