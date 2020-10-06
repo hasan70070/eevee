@@ -1,7 +1,7 @@
 :root{
     --white-color:#FDFDFD;
-    --black-color:#000;
-    --main-color:#262626;
+    --black-color:#515050;
+    --main-color:#ff2b4a;
     --secondary-color:#eee;
     --h-font:'Raleway', sans-serif;
     --p-font:'Roboto', sans-serif;
@@ -27,14 +27,20 @@ h1,h2,h3,h4,h5,h6{
     font-family: var(--h-font);
 }
 
-
+/*
+============================
+  HERO AREA STARTS
+============================
+*/
 #hero-area{
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/hero-bg.jpg) no-repeat center center;
+  max-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/hero-bg-2.jpg) no-repeat top center;
   background-size: cover;
   display: flex;
   flex-direction: column;
+  // border: 1px solid red;
 
  
   .main-nav{
@@ -70,7 +76,7 @@ h1,h2,h3,h4,h5,h6{
       left: 0;
       right: 0;
       bottom: 0;
-      border: 1px solid black;
+      // border: 1px solid black;
       background-color: var(--black-color);
       z-index: 1000;
       display: none;
@@ -103,7 +109,7 @@ h1,h2,h3,h4,h5,h6{
     
   }
   .hero-wrapper{
-    //border: 1px solid black;
+    // border: 1px solid black;
 
     margin: auto 0;
     .hero-heading{
@@ -112,7 +118,7 @@ h1,h2,h3,h4,h5,h6{
       h1{
         text-align: center;
         font-size: 6rem;
-        font-weight: 700;
+        font-weight: 800;
         color: var(--white-color);
         text-transform: uppercase;
         letter-spacing: .1rem;
@@ -133,7 +139,7 @@ h1,h2,h3,h4,h5,h6{
           top:0;
           margin: 0 0 0 0;
         }
-        
+
         &::before{
           bottom:0;
         
@@ -152,6 +158,100 @@ h1,h2,h3,h4,h5,h6{
 
   }
 }
+
+/*
+============================
+  HERO AREA ENDS
+============================
+*/
+
+/*
+============================
+  ABOUT ME STATS
+============================
+*/
+#about-me{
+  padding:7rem 0;
+  // border:1px solid black;
+
+  .about-me-img{
+    //border:1px solid black;
+    img{
+      width: 30rem;
+      height: auto;
+      display: block;
+      margin: auto;
+      //border:1px solid black
+    }
+    // border:1px solid black
+  }
+  .about-me-info{
+    //border:1px solid black;
+    display: flex;
+    flex-direction: column;
+   
+    .about-me-name{
+      // border:1px solid black;
+      margin-top: auto;
+      margin-bottom: 1rem;
+      h2{
+        font-size:2.5rem;
+        font-weight:700;
+        color: var(--black-color);
+        // border:1px solid black;
+      }
+      
+    }
+    .about-me-desc{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      // border:1px solid black;
+      P{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: var(--black-color);
+        &:nth-child(1){
+          margin:0 0 2rem 0;
+
+        }
+        &:nth-child(2){
+          margin:2rem 0 0 0;
+
+        }
+      }
+
+    }
+    .hire-me-btn{
+      margin-top: 1rem;
+      margin-bottom: auto;
+      // border: 1px solid black;
+      button{
+        border:.25rem solid transparent;
+        background-color:var(--main-color);
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+        padding: 1rem 5rem;
+        color: var(--white-color);
+        border-radius: .25rem;
+        transition: all 150ms ease-in-out;
+        &:hover,
+        &:focus{
+          background-color: transparent;
+          color: var(--main-color);
+          border:.25rem solid var(--main-color);
+        }
+      }
+    }
+  }
+}
+/*
+============================
+ABOUT ME ENDS
+============================
+*/
+
 
 
 
