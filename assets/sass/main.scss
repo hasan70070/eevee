@@ -423,6 +423,88 @@ EXPERENCE AND EDUCATION ENDS
 ============================
 */
 
+/*
+============================
+MY LATEST WORK STARTS
+============================
+*/
+#my-work{
+  padding: 7rem 0;
+  // border: 1px solid black;
+  
+  .my-work-heading{
+    // border: 1px solid black;
+    margin-bottom: 2rem;
+    h2{
+      font-size:4rem;
+      font-weight: 700;
+      text-transform:uppercase;
+      letter-spacing: .05rem;
+      color: var(--black-color);
+      text-align:center;
+      margin:0;
+    }
+    p{
+      font-size:1.8rem;
+      font-weight:400;
+      letter-spacing:.05rem;
+      color:var(--black-color);
+      margin:0;
+      text-align:center;
+    }
+
+  }
+  .categories{
+    // border: 1px solid black;
+    .wrapper{
+      display: flex;
+      // border: 1px solid black;
+      button{
+        border:none;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-transform:uppercase;
+        letter-spacing:.05rem;
+        color: var(--main-color);
+        border:.2rem solid var(--main-color);
+        padding:.5rem 1rem;
+        margin: .8rem;
+        background-color:transparent;
+        transition: all 150ms ease-in-out;
+        &:hover,
+        &.active{
+          color:var(--white-color);
+          background-color: var(--main-color);
+
+        }
+      }
+
+    }
+  }
+
+  .works{
+    margin-top: 2rem;
+    .work{
+      // border: 1px solid black;
+      margin-bottom: 1.5rem;
+      a{
+        display: inline-block;
+        border: .2rem solid #f4f4f4;
+        img{
+          width:100%;
+          height:auto;
+          display:block;
+        }
+      }
+      
+    }
+  }
+}
+/*
+============================
+MY LATEST WORK ENDS
+============================
+*/
 //it will start working at 992px-1199px
 @media screen and(max-width:1199px){
     html{
