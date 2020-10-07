@@ -475,19 +475,17 @@ MY LATEST WORK STARTS
         &.active{
           color:var(--white-color);
           background-color: var(--main-color);
-
         }
       }
-
     }
   }
 
   .works{
     margin-top: 2rem;
     .work{
-      // border: 1px solid black;
       margin-bottom: 1.5rem;
       a{
+        width: 100%;
         display: inline-block;
         border: .2rem solid #f4f4f4;
         img{
@@ -505,6 +503,65 @@ MY LATEST WORK STARTS
 MY LATEST WORK ENDS
 ============================
 */
+
+/*
+============================
+TESTIMONIAL STATS
+============================
+*/
+#testimonials{
+  padding: 7rem 0;
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url(../img/testimonial-bg.jpg) no-repeat top center;
+  background-size: cover;
+  // border: 1px solid black; 
+  .testimonial-wrapper{
+    
+    //border: 1px solid black;
+    .quate{
+      width: 5rem;
+      height: auto;
+      display: block;
+      margin:0 0 3rem 0;
+      //border: 1px solid black;
+    }
+    p{
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: .05rem;
+      color: var(--black-color);
+      margin: 0 0 4rem 0;
+    }
+    .signature{
+      width: 15rem;
+      height: auto;
+      display: block;
+      //border: 1px solid black;
+    }
+    strong{
+      font-size: 1.6rem;
+      font-weight:700;
+      color: var(--black-color);
+      display: block;
+      letter-spacing: .05rem;
+      //border: 1px solid black;
+    }
+    span{
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      color:var(--black-color);
+      letter-spacing: .05rem;
+    }
+  }
+}
+/*
+============================
+TESTIMONIAL ENDS
+============================
+*/
+
+
+
 //it will start working at 992px-1199px
 @media screen and(max-width:1199px){
     html{
