@@ -603,10 +603,7 @@ CONTACT STARTS
       }
       .contact-form{
         margin-top: 1rem;
-
         // border: 1px solid red;
-
-
           .name,
           .email,
           .subject,
@@ -678,15 +675,61 @@ CONTACT STARTS
           color: #bcbec6;
 
         }
-
       }
     }
-
 }
 
 /*
 ============================
 CONTACT STARTS
+============================
+*/
+
+/*
+============================
+FOOTER STARTS
+============================
+*/
+#footer-area{
+  padding:2rem 0;
+  background-color: rgba(0,0,0,.9);
+  
+  .social-links{
+    ul{
+      margin:0 auto;
+      padding:0;
+      list-style: none;
+      display: flex;
+      li{
+        a{
+          display: inline-block;
+          font-size:1.8rem;
+          font-weight: 400;
+          text-align: center;
+          color:var(--white-color);
+          padding:1rem;
+          transition: all 150ms ease-in-out;
+          &:hover{
+            color:var(--main-color);
+          }
+        }
+      }
+    }
+    p{
+      font-size:1.5rem;
+
+      // border:1px solid #fff;
+      text-align:center;
+      color: var(--white-color);
+      a{
+        color: var(--main-color);
+      }
+    }
+  }
+}
+/*
+============================
+FOOTER ENDS
 ============================
 */
 
