@@ -560,6 +560,137 @@ TESTIMONIAL ENDS
 ============================
 */
 
+/*
+============================
+CONTACT STARTS
+============================
+*/
+
+#contact{
+  padding: 7rem 0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/contact-bg.jpg) no-repeat top center;
+  background-size:cover;
+  background-attachment: fixed;
+    .contact-form-col,
+    .contact-info-col{
+      .wrapper{
+        // border:1px solid red; 
+        padding: 0 15px;
+        height:100%;
+        .row{
+          height: 100%;
+        }
+      }
+    }
+
+    .contact-form-col{
+      .wrapper{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        background-color:rgba(0,0,0,0.7) ;
+
+      }
+      .contact-form-heading{
+        // border: 1px solid red;
+        margin-bottom: 1rem;
+
+        h2{
+          font-size:2.5rem;
+          font-weight: 600;
+          color:var(--white-color);
+          text-transform:uppercase;
+        }
+      }
+      .contact-form{
+        margin-top: 1rem;
+
+        // border: 1px solid red;
+
+
+          .name,
+          .email,
+          .subject,
+          .message,
+          .send{
+            //border: 1px solid black;
+            margin-bottom: 3rem;
+
+          }
+          .name,
+          .email,
+          .subject,
+          .message{
+          
+            input,
+            textarea{
+              width: 100%;
+              padding: 1.5rem 1rem;
+              font-size: 1.8rem;
+              background: transparent;
+              color: #bcbec6;
+              border:.2rem solid var(--white-color);
+              border-radius: .25rem;
+            }
+          }
+          .send{
+            button{
+              border: .2rem solid transparent;
+              background-color: var(--main-color);
+              color:var(--white-color);
+              font-size: 1.8rem;
+              font-weight: 400;
+              text-transform:uppercase;
+              padding: 1rem 5rem;
+              margin: 0 0 0 auto;
+              letter-spacing: .05rem;
+              border-radius: .25rem;
+              transition: all 150ms ease-in-out;
+              &:hover,
+              &:focus{
+                background-color: transparent;
+                color: var(--main-color);
+                border: .2rem solid var(--main-color);
+              }
+            }
+          }
+      }
+    }
+    .contact-info-col{
+      .contact{
+    
+        background-color:rgba(0,0,0,0.7) ;
+        // border: 1px solid #FDFDFD;
+        padding-top:2.5rem;
+        padding-bottom:2.5rem;
+        h3{
+          // border: 1px solid #FDFDFD;
+          font-size:2.5rem;
+          font-weight: 600;
+          text-transform:uppercase;
+          color: var(--white-color);
+          letter-spacing:.05rem;
+          margin: 0 0 1.5rem 0;
+        } 
+        P{
+          font-size:1.8rem;
+          font-weight: 400;
+          letter-spacing: .05rem;
+          color: #bcbec6;
+
+        }
+
+      }
+    }
+
+}
+
+/*
+============================
+CONTACT STARTS
+============================
+*/
+
+
 
 
 //it will start working at 992px-1199px
