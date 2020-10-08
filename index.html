@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Hi there, This is Mohammad.Hasan. A freelance web developer.This protfolio has been designed to let my visitors know about me and my skills. I tried to show my skills clearly on this field so that my visitors can get well concept about me as long as I also attach some of my recent and previous projects.">
-    <meta name="keywords" content="Hasan70070, Md.Hasan70070, Mohammad Hasan, Full stack web developer, freelance web developer Hasan, Freelance full stack web developer, Programmer, Web designer, WordPress developer">
+    <meta name="description" content="Simple one page static website template using HTML, CSS, Javascript, Jquery, Bootstrap">
+    <meta name="keywords" content="static website, psd to html, html css website,">
     <meta name="author" content="Hasan70070">
     <title>Paul Lapkin - A Web Designer and Developer</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!-- Google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800;900&family=Roboto:wght@300;400;500&display=swap"> 
     <!-- Font Awesome css -->
@@ -25,27 +26,44 @@
 <body>
           <!-- hero area section starts -->
     <header id="hero-area">
-      <nav class="main-nav">
+      <nav class="main-nav" uk-sticky="top: 350; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
         <div class="container">
           <a href="#" class="nav-logo">
-            <img src="assets/img/logo.png" alt="">
+            <img src="assets/img/logo.png" alt="logo">
           </a>
           <button class="nav-toggle-btn" type='button'> <i class="fa fa-bars"></i></button>
-    
+
           <div class="nav-links">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Serivces</a></li>
-            </ul>
+            <div class="container">
+              <div class="row nav-close-btn">
+                <div class="col-12 d-flex">
+                  <button type="button"><i class="fa fa-times"></i></button>
+                </div>
+              </div>
+
+              <div class="row nav-links-wrapper">
+                <div class="col-12 d-flex">
+                  <ul>
+                    <li><a href="#hero-area">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#working-process">Process</a></li>
+                    <li><a href="#experience-education">Experience</a></li>
+                    <li><a href="#my-work">Works</a></li>
+                    <li><a href="#testimonials">Testimonial</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
+
+    
       <div class="hero-wrapper">
           <div class="container">
             <div class="row hero-heading">
-              <div class="col-12 d-flex flex-column">
+              <div class="col-12 d-flex flex-column" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">
                 <div class="mx-auto">
                   <h1>Paul Lapkin</h1>
                 </div>
@@ -63,12 +81,10 @@
   <section id="about-me">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 about-me-img mb-4 mb-md-0">
-              <img src="assets/img/about-me.png" alt="">
+          <div class="col-md-4 about-me-img mb-4 mb-md-0" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 100; repeat: true">
+              <img src="assets/img/about-me.png" alt="Paul Lapkin">
           </div>
-          <div class="col-md-8 about-me-info mt-4 mt-md-0">
-       
-
+          <div class="col-md-8 about-me-info mt-4 mt-md-0" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 100; repeat: true">
             <div class="row about-me-name">
               <div class="col-10 col-md-12 mx-auto">
                 <h2 class="text-center text-md-left">Hi, I’m Paul Lapkin, Experience Crafter from Canada.</h2>
@@ -233,46 +249,46 @@
           <div class="row categories">
             <div class="col-12">
               <div class="wrapper">
-                <button class="active" type="button">All</button>
-                <button type="button">Static</button>
-                <button type="button">Wordpress</button>
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter=".static">Static</button>
+                <button type="button" data-filter=".wordpress">Wordpress</button>
               </div>
             </div>
           </div>
-          <div class="row works">
-            <div class="col-md-4 work">
-              <a href="#">
-                <img src="assets/img/work-1.jpg" alt="">
+          <div class="row works" uk-lightbox="animation: scale">
+            <div class="col-md-4 mix static work">
+              <a href="assets/img/work-1.jpg" data-caption="Beautiful static websites">
+                <img src="assets/img/work-1.jpg" alt="Beautiful static websites">
               </a>
             </div>
 
-            <div class="col-md-4 work">
-              <a href="#">
-                <img src="assets/img/work-2.jpg" alt="">
+            <div class="col-md-4 mix wordpress  work">
+              <a href="assets/img/work-2.jpg" data-caption="Beautiful wordpress websites">
+                <img src="assets/img/work-2.jpg" alt="Beautiful wordprss websites">
               </a>
             </div>
 
-            <div class="col-md-4 work">
-              <a href="#">
-                <img src="assets/img/work-3.jpg" alt="">
+            <div class="col-md-4 mix static work" >
+              <a href="assets/img/work-3.jpg" data-caption="Beautiful static websites">
+                <img src="assets/img/work-3.jpg" alt="Beautiful static websites">
               </a>
             </div>
 
-            <div class="col-md-4 work">
-              <a href="#">
-                <img src="assets/img/work-4.jpg" alt="">
+            <div class="col-md-4 mix wordpress work">
+              <a href="assets/img/work-4.jpg" data-caption="Beautiful wordpress websites">
+                <img src="assets/img/work-4.jpg" alt="Beautiful wordpress websites">
               </a>
             </div>
 
-            <div class="col-md-4 work">
-              <a href="#">
-                <img src="assets/img/work-5.jpg" alt="">
+            <div class="col-md-4 mix static work">
+              <a href="assets/img/work-5.jpg" data-caption="Beautiful static websites">
+                <img src="assets/img/work-5.jpg" alt="Beautiful static websites">
               </a>
             </div>
 
-            <div class="col-md-4 work">
-              <a href="#">
-                <img src="assets/img/work-6.jpg" alt="">
+            <div class="col-md-4 mix wordpress work">
+              <a href="assets/img/work-6.jpg" data-caption="Beautiful wordpress websites">
+                <img src="assets/img/work-6.jpg" alt="Beautiful wordpress websites">
               </a>
             </div>
           </div>
@@ -285,11 +301,11 @@
       <div class="container">
           <div class="row">
             <div class="col-12 col-md-6 testimonial-wrapper">
-              <img class="quate" src="assets/img/Quate.png" alt="">
+              <img class="quate" src="assets/img/Quate.png" alt="Testimonal quate">
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.
               </p>
-              <img class="signature" src="assets/img/signature.png" alt="">
+              <img class="signature" src="assets/img/signature.png" alt="Testimonal">
               <strong>Deniel Croft</strong>
               <span>Creative Designer, Levy</span>
             </div>
@@ -327,7 +343,7 @@
                    </div>
                    <div class="row message">
                      <div class="col-12">
-                       <textarea name="" id="" cols="30" rows="5" placeholder="Message*"></textarea>
+                       <textarea name="message"  cols="30" rows="5" placeholder="Message*"></textarea>
                      </div>
                    </div>
                    <div class="row send">
@@ -387,25 +403,13 @@
               <p>
                 Copyright <a href="https://hasan70070.getwebsquad.com" target="_blank">Hasan70070</a> | All Rights Reserved.
               </p>
+              <div class="to-top d-flex">
+                <a href="#" uk-totop uk-scroll></a>
+              </div>
             </div>
           </div>
       </div>
   </footer>
-
-
-
-          
-
-
-
-    
-   
-
-
-
-    
-  
-
 
 
 
@@ -414,11 +418,48 @@
     <!-- uikit Js -->
     <script src="vendors/js/uikit.min.js"></script>
     <script src="vendors/js/uikit-icons.min.js"></script>
+    <!--Js for supporting browsers -->
     <script src="vendors/js/html5shiv.min.js"></script>
     <script src="vendors/js/respond.min.js"></script>
     <script src="vendors/js/selectivizr.min.js"></script>
+      <!--mixi up -->
+    <script src="vendors/js/mixitup.min.js"></script>
+      <!--particals up -->
+      <script src="vendors/js/particles.min.js"></script>
+    <script src="vendors/js/app.js"></script>
     <script>
         $(document).ready(function(){
+
+          //initialize mixitup plugin
+          var mixer = mixitup('#my-work .works');
+
+          $(".nav-toggle-btn").click(function(){
+            $(".nav-links").css({
+              display:'block'
+            })
+          })
+
+          $('.nav-links').click(function(){
+
+            $(this).css({
+              display:'none'
+            })
+          })
+          $(".nav-links .nav-links-wrapper a").click(function(e){
+            e.preventDefault();
+            
+            var x=$(this.hash);
+
+            $("body,html").animate({
+
+              scrollTop:$(this.hash).offset().top
+
+
+            },500,function(){})
+          
+
+          })
+       
           
         })
 
